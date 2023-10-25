@@ -43,15 +43,15 @@ public class SMSServiceProviderImpl implements SMSServiceProvider {
 	private String unicode;
 	@Value("${mosip.kernel.sms.number.length}")
 	private int numberLength;
-	@Value("${mosip.kernel.sms.authorization}")
-	private String authorization;
+	@Value("${mosip.kernel.sms.authkey}")
+	private String authKey;
 
 	@Override
 	public SMSResponseDto sendSms(String contactNumber, String message) {
 		SMSResponseDto smsResponseDTO = new SMSResponseDto();
 		validateInput(contactNumber);
 			try {
-			NimbaMessageRequest.send(apiUrl,authorization,senderId ,contactNumber, message);
+			NimbaMessageRequest.send(apiUrl,authKey,senderId ,contactNumber, message);
 		} catch (HttpClientErrorException | HttpServerErrorException | JSONException|UnsupportedEncodingException | IOException e) {
 
 			throw new RuntimeException(((RestClientResponseException) e).getResponseBodyAsString());

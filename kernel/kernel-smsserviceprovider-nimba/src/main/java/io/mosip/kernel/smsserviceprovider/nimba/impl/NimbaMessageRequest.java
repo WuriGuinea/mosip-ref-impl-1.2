@@ -23,14 +23,14 @@ import io.mosip.kernel.smsserviceprovider.nimba.constant.SmsPropertyConstant;
 public class NimbaMessageRequest {
 
 	@SuppressWarnings("unchecked")
-	public static void send(String apiurl, String authorization, String senderId, String contact, String message)
+	public static void send(String apiurl, String authkey, String senderId, String contact, String message)
 			throws UnsupportedEncodingException, MalformedURLException, IOException, JSONException {
 	//	message = URLEncoder.encode(message, "ISO-8859-1");
 		HttpURLConnection urlConnection = (HttpURLConnection) new URL(apiurl).openConnection(); // OK
 		urlConnection.setDoOutput(true); // Triggers POST.
 		urlConnection.setDoInput(true);
 		urlConnection.setRequestMethod("POST");
-		urlConnection.setRequestProperty("Authorization", authorization);
+		urlConnection.setRequestProperty("Authorization", authkey);
 		urlConnection.setRequestProperty("Content-Type", "application/json");
 		JSONObject jsonParam = new JSONObject();
 		List<String> to = new ArrayList<String>();
