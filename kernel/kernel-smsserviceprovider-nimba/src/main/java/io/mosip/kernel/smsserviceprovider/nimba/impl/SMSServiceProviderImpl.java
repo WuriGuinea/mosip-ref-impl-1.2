@@ -13,8 +13,8 @@ import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.client.RestClientResponseException;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.util.UriComponentsBuilder;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import io.mosip.kernel.core.exception.UnsupportedEncodingException;
 import io.mosip.kernel.core.notification.exception.InvalidNumberException;
 import io.mosip.kernel.core.notification.model.SMSResponseDto;
@@ -25,10 +25,12 @@ import io.mosip.kernel.smsserviceprovider.nimba.constant.SmsPropertyConstant;
 
 /**
  * @author CONDEIS
- * @since 1.1.0
+ * @since 1.2.0-B1
  */
 @Component
 public class SMSServiceProviderImpl implements SMSServiceProvider {
+
+	static Logger logger = LoggerFactory.getLogger(SMSServiceProviderImpl.class);
 
 	@Autowired
 	RestTemplate restTemplate;
@@ -48,14 +50,16 @@ public class SMSServiceProviderImpl implements SMSServiceProvider {
 
 	@Override
 	public SMSResponseDto sendSms(String contactNumber, String message) {
+		logger.info("Sending SMS to" + contactNumber);
 		SMSResponseDto smsResponseDTO = new SMSResponseDto();
 		validateInput(contactNumber);
-			try {
-			NimbaMessageRequest.send(apiUrl,authKey,senderId ,contactNumber, message);
-		} catch (HttpClientErrorException | HttpServerErrorException | JSONException|UnsupportedEncodingException | IOException e) {
-
+		try {
+			NimbaMessageRequest.send(apiUrl, authKey, senderId, contactNumber, message);
+		} catch (HttpClientErrorException | HttpServerErrorException | JSONException | UnsupportedEncodingException
+				| IOException e) {
+			logger.error("Error occured while sending SMS "+e.getMessage());
 			throw new RuntimeException(((RestClientResponseException) e).getResponseBodyAsString());
-		} 
+		}
 		smsResponseDTO.setMessage(SmsPropertyConstant.SUCCESS_RESPONSE.getProperty());
 		smsResponseDTO.setStatus("success");
 		return smsResponseDTO;
