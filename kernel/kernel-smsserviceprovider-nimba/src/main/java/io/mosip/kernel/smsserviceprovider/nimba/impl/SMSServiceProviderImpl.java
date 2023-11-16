@@ -4,7 +4,6 @@
 package io.mosip.kernel.smsserviceprovider.nimba.impl;
 
 import java.io.IOException;
-
 import org.json.JSONException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -50,14 +49,14 @@ public class SMSServiceProviderImpl implements SMSServiceProvider {
 
 	@Override
 	public SMSResponseDto sendSms(String contactNumber, String message) {
-		logger.info("Sending SMS to" + contactNumber);
+		logger.info("Sending SMS to *** *** " + contactNumber.substring(6));
 		SMSResponseDto smsResponseDTO = new SMSResponseDto();
 		validateInput(contactNumber);
 		try {
 			NimbaMessageRequest.send(apiUrl, authKey, senderId, contactNumber, message);
 		} catch (HttpClientErrorException | HttpServerErrorException | JSONException | UnsupportedEncodingException
 				| IOException e) {
-			logger.error("Error occured while sending SMS "+e.getMessage());
+			logger.error("Error occured while sending SMS " + e.getMessage());
 			throw new RuntimeException(((RestClientResponseException) e).getResponseBodyAsString());
 		}
 		smsResponseDTO.setMessage(SmsPropertyConstant.SUCCESS_RESPONSE.getProperty());
