@@ -3,17 +3,17 @@
 	"order": 2,
 	"flow": "UPDATE",
 	"label": {
-		"fra": "Mise Ã jour l'INU"
+		"fra": "Mise a jour  de l'INU"
 	},
 	"screens": [
 		{
 			"order": 1,
 			"name": "DemographicDetails",
 			"label": {
-				"fra": "DÃ©tails dÃ©mographiques"
+				"fra": "Détails démographiques"
 			},
 			"caption": {
-				"fra": "DÃ©tails dÃ©mographiques"
+				"fra": "Détails démographiques"
 			},
 			"fields": [
 				{
@@ -39,7 +39,7 @@
 						}
 					],
 					"fieldCategory": "pvt",
-					"alignmentGroup": "DÃ©mographiques",
+					"alignmentGroup": "Démographiques",
 					"visible": null,
 					"contactType": null,
 					"group": "firstName",
@@ -50,7 +50,7 @@
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": null,
 					"required": true,
 					"bioAttributes": null,
@@ -81,7 +81,7 @@
 						}
 					],
 					"fieldCategory": "pvt",
-					"alignmentGroup": "DÃ©mographiques",
+					"alignmentGroup": "Démographiques",
 					"visible": null,
 					"contactType": null,
 					"group": "LastName",
@@ -92,7 +92,7 @@
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": null,
 					"required": true,
 					"bioAttributes": null,
@@ -123,7 +123,7 @@
 						}
 					],
 					"fieldCategory": "pvt",
-					"alignmentGroup": "DÃ©mographiques",
+					"alignmentGroup": "Démographiques",
 					"visible": null,
 					"contactType": null,
 					"group": "DateOfBirth",
@@ -134,7 +134,7 @@
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": null,
 					"required": true,
 					"bioAttributes": null,
@@ -157,7 +157,7 @@
 					"format": "",
 					"validators": [],
 					"fieldCategory": "pvt",
-					"alignmentGroup": "DÃ©mographiques",
+					"alignmentGroup": "Démographiques",
 					"visible": null,
 					"contactType": null,
 					"group": "Gender",
@@ -168,7 +168,7 @@
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": null,
 					"required": true,
 					"bioAttributes": null,
@@ -208,7 +208,7 @@
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": null,
 					"required": false,
 					"bioAttributes": null,
@@ -226,7 +226,7 @@
 					"maximum": 0,
 					"description": "region",
 					"label": {
-						"fra": "RÃ©gion"
+						"fra": "Région"
 					},
 					"controlType": "dropdown",
 					"fieldType": "default",
@@ -244,13 +244,13 @@
 					"alignmentGroup": "Adresse",
 					"visible": null,
 					"contactType": "Postal",
-					"group": "Location",
+					"group": "Adresse",
 					"groupLabel": null,
 					"changeAction": null,
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": null,
 					"required": true,
 					"bioAttributes": null,
@@ -266,7 +266,7 @@
 					"maximum": 0,
 					"description": "prefecture",
 					"label": {
-						"fra": "PrÃ©fecture"
+						"fra": "Préfecture"
 					},
 					"controlType": "dropdown",
 					"fieldType": "default",
@@ -284,13 +284,13 @@
 					"alignmentGroup": "Adresse",
 					"visible": null,
 					"contactType": "Postal",
-					"group": "Location",
+					"group": "Adresse",
 					"groupLabel": null,
 					"changeAction": null,
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": null,
 					"required": true,
 					"bioAttributes": null,
@@ -306,7 +306,7 @@
 					"maximum": 0,
 					"description": "subPrefectureOrCommune",
 					"label": {
-						"fra": "Sous-PrÃ©fecture/Commune"
+						"fra": "Sous-Préfecture/Commune"
 					},
 					"controlType": "dropdown",
 					"fieldType": "default",
@@ -324,13 +324,13 @@
 					"alignmentGroup": "Adresse",
 					"visible": null,
 					"contactType": "Postal",
-					"group": "Location",
+					"group": "Adresse",
 					"groupLabel": null,
 					"changeAction": null,
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": null,
 					"required": true,
 					"bioAttributes": null,
@@ -364,13 +364,13 @@
 					"alignmentGroup": "Adresse",
 					"visible": null,
 					"contactType": null,
-					"group": "Location",
+					"group": "Adresse",
 					"groupLabel": null,
 					"changeAction": null,
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": null,
 					"required": true,
 					"bioAttributes": null,
@@ -404,13 +404,13 @@
 					"alignmentGroup": "Adresse",
 					"visible": null,
 					"contactType": "Postal",
-					"group": "Location",
+					"group": "Adresse",
 					"groupLabel": null,
 					"changeAction": null,
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": null,
 					"required": true,
 					"bioAttributes": null,
@@ -427,7 +427,7 @@
 					"maximum": 0,
 					"description": "additionalAddresDetails",
 					"label": {
-						"fra": "ComplÃ©ment d'adresse"
+						"fra": "Complément d'adresse"
 					},
 					"controlType": "textbox",
 					"fieldType": "default",
@@ -445,13 +445,13 @@
 					"alignmentGroup": "Adresse",
 					"visible": null,
 					"contactType": "Postal",
-					"group": "additionalAddresDetails",
+					"group": "Adresse",
 					"groupLabel": null,
 					"changeAction": null,
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": null,
 					"required": false,
 					"bioAttributes": null,
@@ -493,7 +493,7 @@
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": null,
 					"required": false,
 					"bioAttributes": null,
@@ -513,7 +513,7 @@
 					"maximum": 0,
 					"description": "introducerFirstName",
 					"label": {
-						"fra": "PrÃ©nom du tuteur"
+						"fra": "Prénom du tuteur"
 					},
 					"controlType": "textbox",
 					"fieldType": "default",
@@ -525,13 +525,13 @@
 					"contactType": null,
 					"group": "IntroducerDetails",
 					"groupLabel": {
-						"fra": "DÃ©tails de l'introducteur"
+						"fra": "Détails de l'introducteur"
 					},
 					"changeAction": null,
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": null,
 					"required": true,
 					"bioAttributes": null,
@@ -559,13 +559,13 @@
 					"contactType": null,
 					"group": "IntroducerDetails",
 					"groupLabel": {
-						"fra": "DÃ©tails du tuteur"
+						"fra": "Détails du tuteur"
 					},
 					"changeAction": null,
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": null,
 					"required": true,
 					"bioAttributes": null,
@@ -604,13 +604,13 @@
 					"contactType": null,
 					"group": "IntroducerDetails",
 					"groupLabel": {
-						"fra": "DÃ©tails du tuteur"
+						"fra": "Détails du tuteur"
 					},
 					"changeAction": null,
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": null,
 					"required": false,
 					"bioAttributes": null,
@@ -654,13 +654,13 @@
 					"contactType": null,
 					"group": "IntroducerDetails",
 					"groupLabel": {
-						"fra": "DÃ©tails du tuteur"
+						"fra": "Détails du tuteur"
 					},
 					"changeAction": null,
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": null,
 					"required": false,
 					"bioAttributes": null,
@@ -715,7 +715,7 @@
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": null,
 					"required": true,
 					"bioAttributes": null,
@@ -749,14 +749,14 @@
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": null,
 					"required": false,
 					"bioAttributes": null,
 					"requiredOn": [
 						{
 							"engine": "MVEL",
-							"expr": "identity.updatableFieldGroups contains 'Address' || identity.updatableFieldGroups contains 'Location'"
+							"expr": "identity.updatableFieldGroups contains 'Address' || identity.updatableFieldGroups contains ''"
 						}
 					],
 					"subType": "POA",
@@ -770,7 +770,7 @@
 					"maximum": 0,
 					"description": "proofOfIdentity",
 					"label": {
-						"fra": "Preuve d'identitÃ©"
+						"fra": "Preuve d'identité"
 					},
 					"controlType": "fileupload",
 					"fieldType": "default",
@@ -788,7 +788,7 @@
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": null,
 					"required": false,
 					"bioAttributes": null,
@@ -827,7 +827,7 @@
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": null,
 					"required": false,
 					"bioAttributes": null,
@@ -866,7 +866,7 @@
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": null,
 					"required": false,
 					"bioAttributes": null,
@@ -905,7 +905,7 @@
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": null,
 					"required": false,
 					"bioAttributes": null,
@@ -923,10 +923,10 @@
 			"order": 3,
 			"name": "BiometricDetails",
 			"label": {
-				"fra": "DÃ©tails biomÃ©triques"
+				"fra": "Détails biométriques"
 			},
 			"caption": {
-				"fra": "DÃ©tails biomÃ©triques"
+				"fra": "Détails biométriques"
 			},
 			"fields": [
 				{
@@ -937,7 +937,7 @@
 					"maximum": 0,
 					"description": "",
 					"label": {
-						"fra": "BiomÃ©trie du candidat"
+						"fra": "Biométrie du candidat"
 					},
 					"controlType": "biometrics",
 					"fieldType": "default",
@@ -949,13 +949,13 @@
 					"contactType": null,
 					"group": "Biometrics",
 					"groupLabel": {
-						"fra": "BiomÃ©trie"
+						"fra": "Biométrie"
 					},
 					"changeAction": null,
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": [
 						{
 							"ageGroup": "INFANT",
@@ -999,7 +999,7 @@
 					"maximum": 0,
 					"description": "Used to hold biometrics only for authentication",
 					"label": {
-						"fra": "Authentification BiomÃ©trie"
+						"fra": "Authentification Biométrie"
 					},
 					"controlType": "biometrics",
 					"fieldType": "default",
@@ -1011,13 +1011,13 @@
 					"contactType": null,
 					"group": "Biometrics",
 					"groupLabel": {
-						"fra": "BiomÃ©trie"
+						"fra": "Biométrie"
 					},
 					"changeAction": null,
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": [
 						{
 							"ageGroup": "ALL",
@@ -1073,7 +1073,7 @@
 					"maximum": 0,
 					"description": "",
 					"label": {
-						"fra": "Introducteur BiomÃ©trie"
+						"fra": "Introducteur Biométrie"
 					},
 					"controlType": "biometrics",
 					"fieldType": "default",
@@ -1085,13 +1085,13 @@
 					"contactType": null,
 					"group": "Biometrics",
 					"groupLabel": {
-						"fra": "BiomÃ©trie"
+						"fra": "Biométrie"
 					},
 					"changeAction": null,
 					"transliterate": false,
 					"templateName": null,
 					"fieldLayout": null,
-					"locationHierarchy": null,
+					"Hierarchy": null,
 					"conditionalBioAttributes": [
 						{
 							"ageGroup": "ALL",
@@ -1147,7 +1147,7 @@
 		}
 	],
 	"caption": {
-		"fra": "Mettre Ã jour l'INU"
+		"fra": "Mettre � jour l'INU"
 	},
 	"icon": "UINUpdate.png",
 	"autoSelectedGroups": [
