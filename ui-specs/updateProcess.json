@@ -1,1 +1,1160 @@
-{"id":"UPDATE","order":2,"flow":"UPDATE","label":{"fra":"Mettre à jour l'UIN"},"screens":[{"order":1,"name":"DemographicDetails","label":{"fra":"Détails démographiques"},"caption":{"fra":"Détails démographiques"},"fields":[{"id":"firstName","inputRequired":true,"type":"simpleType","minimum":0,"maximum":0,"description":"FirstName","label":{"fra":"Prenom"},"controlType":"textbox","fieldType":"default","format":"none","validators":[{"type":"regex","validator":"^(?=.{3,50}$).*","arguments":[],"langCode":null,"errorCode":null}],"fieldCategory":"pvt","alignmentGroup":"Démographiques","visible":null,"contactType":null,"group":"firstName","groupLabel":{"fra":"Prenom"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":true,"bioAttributes":null,"requiredOn":[],"subType":"firstName","exceptionPhotoRequired":false},{"id":"lastName","inputRequired":true,"type":"simpleType","minimum":0,"maximum":0,"description":"LastName","label":{"fra":"Nom"},"controlType":"textbox","fieldType":"default","format":"none","validators":[{"type":"regex","validator":"^(?=.{3,50}$).*","arguments":[],"langCode":null,"errorCode":null}],"fieldCategory":"pvt","alignmentGroup":"Démographiques","visible":null,"contactType":null,"group":"LastName","groupLabel":{"fra":"Nom"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":true,"bioAttributes":null,"requiredOn":[],"subType":"lastName","exceptionPhotoRequired":false},{"id":"dateOfBirth","inputRequired":true,"type":"string","minimum":0,"maximum":0,"description":"dateOfBirth","label":{"fra":"Date de Naissance"},"controlType":"ageDate","fieldType":"default","format":"none","validators":[{"type":"regex","validator":"^(1869|18[7-9][0-9]|19[0-9][0-9]|20[0-9][0-9])/([0][1-9]|1[0-2])/([0][1-9]|[1-2][0-9]|3[01])$","arguments":[],"langCode":null,"errorCode":null}],"fieldCategory":"pvt","alignmentGroup":"Démographiques","visible":null,"contactType":null,"group":"DateOfBirth","groupLabel":{"fra":"Date de Naissance"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":true,"bioAttributes":null,"requiredOn":[],"subType":"dateOfBirth","exceptionPhotoRequired":false},{"id":"gender","inputRequired":true,"type":"simpleType","minimum":0,"maximum":0,"description":"gender","label":{"fra":"Le genre"},"controlType":"dropdown","fieldType":"dynamic","format":"","validators":[],"fieldCategory":"pvt","alignmentGroup":"Démographiques","visible":null,"contactType":null,"group":"Gender","groupLabel":{"fra":"Le genre"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":true,"bioAttributes":null,"requiredOn":[],"subType":"gender","exceptionPhotoRequired":false},{"id":"additionalAddresDetails","inputRequired":true,"type":"simpleType","minimum":0,"maximum":0,"description":"additionalAddresDetails","label":{"fra":"Détails d'adresse Supplémentaires"},"controlType":"textbox","fieldType":"default","format":"none","validators":[{"type":"regex","validator":"^(?=.{3,50}$).*","arguments":[],"langCode":null,"errorCode":null}],"fieldCategory":"pvt","alignmentGroup":"Adresse","visible":null,"contactType":"Postal","group":"Address","groupLabel":{"fra":"Adresse"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":false,"bioAttributes":null,"requiredOn":[],"subType":"additionalAddresDetails","exceptionPhotoRequired":false},{"id":"referenceIdentityNumber","inputRequired":true,"type":"string","minimum":0,"maximum":0,"description":"referenceIdentityNumber","label":{"fra":"Numéro d'identité de Référence"},"controlType":"textbox","fieldType":"default","format":"kyc","validators":[{"type":"regex","validator":"^([0-9]{10,30})$","arguments":[],"langCode":null,"errorCode":null}],"fieldCategory":"pvt","alignmentGroup":null,"visible":null,"contactType":null,"group":"ReferenceIdentityNumber","groupLabel":{"fra":"Numéro d'identité de Référence"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":false,"bioAttributes":null,"requiredOn":[],"subType":"none","exceptionPhotoRequired":false},{"id":"region","inputRequired":true,"type":"simpleType","minimum":0,"maximum":0,"description":"region","label":{"fra":"Région"},"controlType":"dropdown","fieldType":"default","format":"none","validators":[{"type":"regex","validator":"^(?=.{0,50}$).*","arguments":[],"langCode":null,"errorCode":null}],"fieldCategory":"pvt","alignmentGroup":"Adresse","visible":null,"contactType":"Postal","group":"Address","groupLabel":{"fra":"Adresse"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":true,"bioAttributes":null,"requiredOn":[],"subType":"REGION","exceptionPhotoRequired":false},{"id":"prefecture","inputRequired":true,"type":"simpleType","minimum":0,"maximum":0,"description":"prefecture","label":{"fra":"Prefecture"},"controlType":"dropdown","fieldType":"default","format":"none","validators":[{"type":"regex","validator":"^(?=.{0,50}$).*","arguments":[],"langCode":null,"errorCode":null}],"fieldCategory":"pvt","alignmentGroup":"Adresse","visible":null,"contactType":"Postal","group":"Address","groupLabel":{"fra":"Adresse"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":true,"bioAttributes":null,"requiredOn":[],"subType":"PREFECTURE","exceptionPhotoRequired":false},{"id":"subPrefectureOrCommune","inputRequired":true,"type":"simpleType","minimum":0,"maximum":0,"description":"subPrefectureOrCommune","label":{"fra":"Sous-Préfecture/Commune"},"controlType":"dropdown","fieldType":"default","format":"none","validators":[{"type":"regex","validator":"^(?=.{0,50}$).*","arguments":[],"langCode":null,"errorCode":null}],"fieldCategory":"pvt","alignmentGroup":"Adresse","visible":null,"contactType":"Postal","group":"Address","groupLabel":{"fra":"Adresse"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":true,"bioAttributes":null,"requiredOn":[],"subType":"SOUS_PREFECTURE_OU_COMMUNE","exceptionPhotoRequired":false},{"id":"district","inputRequired":true,"type":"simpleType","minimum":0,"maximum":0,"description":"district","label":{"fra":"District"},"controlType":"dropdown","fieldType":"default","format":"none","validators":[{"type":"regex","validator":"^(?=.{3,50}$).*","arguments":[],"langCode":null,"errorCode":null}],"fieldCategory":"pvt","alignmentGroup":"Adresse","visible":null,"contactType":null,"group":"Address","groupLabel":{"fra":"Adresse"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":true,"bioAttributes":null,"requiredOn":[],"subType":"DISTRICT","exceptionPhotoRequired":false},{"id":"sector","inputRequired":true,"type":"string","minimum":0,"maximum":0,"description":"sector","label":{"fra":"Secteur"},"controlType":"dropdown","fieldType":"default","format":"none","validators":[{"type":"regex","validator":"^(?=.{3,50}$).*","arguments":[],"langCode":null,"errorCode":null}],"fieldCategory":"pvt","alignmentGroup":"Adresse","visible":null,"contactType":"Postal","group":"Address","groupLabel":{"fra":"Adresse"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":true,"bioAttributes":null,"requiredOn":[],"subType":"SECTEUR","exceptionPhotoRequired":false},{"id":"phone","inputRequired":true,"type":"string","minimum":0,"maximum":0,"description":"phone","label":{"fra":"Phone"},"controlType":"textbox","fieldType":"default","format":"none","validators":[{"type":"regex","validator":"^(6[1256]{1})([0-9]{7})$","arguments":[],"langCode":null,"errorCode":null}],"fieldCategory":"pvt","alignmentGroup":"Démographiques","visible":null,"contactType":"Phone","group":"Phone","groupLabel":{"fra":"Phone"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":false,"bioAttributes":null,"requiredOn":[],"subType":"Phone","exceptionPhotoRequired":false},{"id":"email","inputRequired":true,"type":"string","minimum":0,"maximum":0,"description":"email","label":{"fra":"Email"},"controlType":"textbox","fieldType":"default","format":"none","validators":[{"type":"regex","validator":"^[A-Za-z0-9_\\-]+(\\.[A-Za-z0-9_]+)*@[A-Za-z0-9_-]+(\\.[A-Za-z0-9_]+)*(\\.[a-zA-Z]{2,})$","arguments":[],"langCode":null,"errorCode":null}],"fieldCategory":"pvt","alignmentGroup":"contact","visible":null,"contactType":"email","group":"Email","groupLabel":{"fra":"Email"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":false,"bioAttributes":null,"requiredOn":[],"subType":"Email","exceptionPhotoRequired":false},{"id":"introducerFirstName","inputRequired":true,"type":"simpleType","minimum":0,"maximum":0,"description":"introducerFirstName","label":{"fra":"Prénom de l'introducteur"},"controlType":"textbox","fieldType":"default","format":"none","validators":[],"fieldCategory":"evidence","alignmentGroup":"Introducteur","visible":null,"contactType":null,"group":"IntroducerDetails","groupLabel":{"fra":"Détails de l'introducteur"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":true,"bioAttributes":null,"requiredOn":[],"subType":"introducerFirstName","exceptionPhotoRequired":false},{"id":"introducerLastName","inputRequired":true,"type":"simpleType","minimum":0,"maximum":0,"description":"introducerLastName","label":{"fra":"Nom de l'introducteur"},"controlType":"textbox","fieldType":"default","format":"none","validators":[],"fieldCategory":"evidence","alignmentGroup":"Introducteur","visible":null,"contactType":null,"group":"IntroducerDetails","groupLabel":{"fra":"Détails de l'introducteur"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":true,"bioAttributes":null,"requiredOn":[],"subType":"introducerLastName","exceptionPhotoRequired":false},{"id":"introducerRID","inputRequired":true,"type":"string","minimum":0,"maximum":0,"description":"introducerRID","label":{"fra":"Introducteur RID"},"controlType":"textbox","fieldType":"default","format":"none","validators":[{"type":"regex","validator":"^([0-9]{10,30})$","arguments":[],"langCode":null,"errorCode":null}],"fieldCategory":"evidence","alignmentGroup":"introducer","visible":{"engine":"MVEL","expr":"identity.get('introducerUIN') == nil || identity.get('introducerUIN') == empty"},"contactType":null,"group":"IntroducerDetails","groupLabel":{"fra":"Détails de l'introducteur"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":false,"bioAttributes":null,"requiredOn":[{"engine":"MVEL","expr":"identity.get('introducerUIN') == nil || identity.get('introducerUIN') == empty"}],"subType":"RID","exceptionPhotoRequired":false},{"id":"introducerUIN","inputRequired":true,"type":"string","minimum":0,"maximum":0,"description":"introducerUIN","label":{"fra":"Introducteur UIN"},"controlType":"textbox","fieldType":"default","format":"none","validators":[{"type":"regex","validator":"^([0-9]{10,30})$","arguments":[],"langCode":null,"errorCode":null}],"fieldCategory":"evidence","alignmentGroup":"introducer","visible":{"engine":"MVEL","expr":"identity.get('introducerRID') == nil || identity.get('introducerRID') == empty"},"contactType":null,"group":"IntroducerDetails","groupLabel":{"fra":"Détails de l'introducteur"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":false,"bioAttributes":null,"requiredOn":[{"engine":"MVEL","expr":"identity.get('introducerRID') == nil || identity.get('introducerRID') == empty"}],"subType":"UIN","exceptionPhotoRequired":false}],"layoutTemplate":null,"preRegFetchRequired":true,"additionalInfoRequestIdRequired":false,"active":false},{"order":2,"name":"Documents","label":{"fra":"Des documents"},"caption":{"fra":"Des documents"},"fields":[{"id":"proofOfConsent","inputRequired":true,"type":"documentType","minimum":0,"maximum":0,"description":"proofOfConsent","label":{"fra":"Preuve de consentement"},"controlType":"fileupload","fieldType":"default","format":"none","validators":[],"fieldCategory":"pvt","alignmentGroup":null,"visible":null,"contactType":null,"group":"Documents","groupLabel":{"fra":"Documents"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":true,"bioAttributes":null,"requiredOn":[],"subType":"POC","exceptionPhotoRequired":false},{"id":"proofOfAddress","inputRequired":true,"type":"documentType","minimum":0,"maximum":0,"description":"proofOfAddress","label":{"fra":"Preuve d'adresse"},"controlType":"fileupload","fieldType":"default","format":"none","validators":[],"fieldCategory":"pvt","alignmentGroup":null,"visible":null,"contactType":null,"group":"Documents","groupLabel":{"fra":"Documents"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":false,"bioAttributes":null,"requiredOn":[{"engine":"MVEL","expr":"identity.updatableFieldGroups contains 'Address' || identity.updatableFieldGroups contains 'Location'"}],"subType":"POA","exceptionPhotoRequired":false},{"id":"proofOfIdentity","inputRequired":true,"type":"documentType","minimum":0,"maximum":0,"description":"proofOfIdentity","label":{"fra":"Preuve d'identité"},"controlType":"fileupload","fieldType":"default","format":"none","validators":[],"fieldCategory":"pvt","alignmentGroup":null,"visible":null,"contactType":null,"group":"Documents","groupLabel":{"fra":"Documents"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":false,"bioAttributes":null,"requiredOn":[{"engine":"MVEL","expr":"identity.updatableFieldGroups contains 'FirstName' || identity.updatableFieldGroups contains 'LastName' || identity.updatableFieldGroups contains 'DateOfBirth'"}],"subType":"POI","exceptionPhotoRequired":false},{"id":"proofOfRelationship","inputRequired":true,"type":"documentType","minimum":0,"maximum":0,"description":"proofOfRelationship","label":{"fra":"Preuve de relation"},"controlType":"fileupload","fieldType":"default","format":"none","validators":[],"fieldCategory":"pvt","alignmentGroup":null,"visible":null,"contactType":null,"group":"Documents","groupLabel":{"fra":"Documents"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":false,"bioAttributes":null,"requiredOn":[{"engine":"MVEL","expr":"identity.get('ageGroup') == 'INFANT' || identity.get('ageGroup') == 'MINOR' || identity.updatableFieldGroups contains 'IntroducerDetails'"}],"subType":"POR","exceptionPhotoRequired":false},{"id":"proofOfDateOfBirth","inputRequired":true,"type":"documentType","minimum":0,"maximum":0,"description":"proofOfDateOfBirth","label":{"fra":"Preuve de date de naissance"},"controlType":"fileupload","fieldType":"default","format":"none","validators":[],"fieldCategory":"pvt","alignmentGroup":null,"visible":null,"contactType":null,"group":"Documents","groupLabel":{"fra":"Documents"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":false,"bioAttributes":null,"requiredOn":[{"engine":"MVEL","expr":"identity.updatableFieldGroups contains 'DateOfBirth'"}],"subType":"POB","exceptionPhotoRequired":false},{"id":"proofOfException","inputRequired":true,"type":"documentType","minimum":0,"maximum":0,"description":"proofOfException","label":{"fra":"Preuve d'exception"},"controlType":"fileupload","fieldType":"default","format":"none","validators":[],"fieldCategory":"evidence","alignmentGroup":null,"visible":null,"contactType":null,"group":"Documents","groupLabel":{"fra":"Documents"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":null,"required":false,"bioAttributes":null,"requiredOn":[],"subType":"POE","exceptionPhotoRequired":false}],"layoutTemplate":null,"preRegFetchRequired":false,"additionalInfoRequestIdRequired":false,"active":false},{"order":3,"name":"BiometricDetails","label":{"fra":"Détails biométriques"},"caption":{"fra":"Détails biométriques"},"fields":[{"id":"individualBiometrics","inputRequired":true,"type":"biometricsType","minimum":0,"maximum":0,"description":"","label":{"fra":"Biométrie du candidat"},"controlType":"biometrics","fieldType":"default","format":"none","validators":[],"fieldCategory":"pvt","alignmentGroup":null,"visible":null,"contactType":null,"group":"Biometrics","groupLabel":{"fra":"Biométrie"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":[{"ageGroup":"INFANT","process":"ALL","validationExpr":"face","bioAttributes":["face"]}],"required":true,"bioAttributes":["leftEye","rightEye","rightIndex","rightLittle","rightRing","rightMiddle","leftIndex","leftLittle","leftRing","leftMiddle","leftThumb","rightThumb","face"],"requiredOn":[{"engine":"MVEL","expr":"identity.updatableFieldGroups contains 'Biometrics'"}],"subType":"applicant","exceptionPhotoRequired":true},{"id":"individualAuthBiometrics","inputRequired":true,"type":"biometricsType","minimum":0,"maximum":0,"description":"Used to hold biometrics only for authentication","label":{"fra":"Authentification Biométrie"},"controlType":"biometrics","fieldType":"default","format":"none","validators":[],"fieldCategory":"pvt","alignmentGroup":null,"visible":null,"contactType":null,"group":"Biometrics","groupLabel":{"fra":"Biométrie"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":[{"ageGroup":"ALL","process":"ALL","validationExpr":"leftEye || rightEye || rightIndex || rightLittle || rightRing || rightMiddle || leftIndex || leftLittle || leftRing || leftMiddle || leftThumb || rightThumb || face","bioAttributes":["leftEye","rightEye","rightIndex","rightLittle","rightRing","rightMiddle","leftIndex","leftLittle","leftRing","leftMiddle","leftThumb","rightThumb","face"]}],"required":false,"bioAttributes":["leftEye","rightEye","rightIndex","rightLittle","rightRing","rightMiddle","leftIndex","leftLittle","leftRing","leftMiddle","leftThumb","rightThumb","face"],"requiredOn":[{"engine":"MVEL","expr":"!(identity.get('ageGroup') == 'INFANT') && !(identity.updatableFieldGroups contains 'Biometrics')"}],"subType":"applicant-auth","exceptionPhotoRequired":false},{"id":"introducerBiometrics","inputRequired":true,"type":"biometricsType","minimum":0,"maximum":0,"description":"","label":{"fra":"Introducteur Biométrie"},"controlType":"biometrics","fieldType":"default","format":"none","validators":[],"fieldCategory":"pvt","alignmentGroup":null,"visible":null,"contactType":null,"group":"Biometrics","groupLabel":{"fra":"Biométrie"},"changeAction":null,"transliterate":false,"templateName":null,"fieldLayout":null,"locationHierarchy":null,"conditionalBioAttributes":[{"ageGroup":"ALL","process":"ALL","validationExpr":"leftEye || rightEye || rightIndex || rightLittle || rightRing || rightMiddle || leftIndex || leftLittle || leftRing || leftMiddle || leftThumb || rightThumb || face","bioAttributes":["leftEye","rightEye","rightIndex","rightLittle","rightRing","rightMiddle","leftIndex","leftLittle","leftRing","leftMiddle","leftThumb","rightThumb","face"]}],"required":false,"bioAttributes":["leftEye","rightEye","rightIndex","rightLittle","rightRing","rightMiddle","leftIndex","leftLittle","leftRing","leftMiddle","leftThumb","rightThumb","face"],"requiredOn":[{"engine":"MVEL","expr":"identity.get('ageGroup') == 'INFANT' || identity.get('ageGroup') == 'MINOR' || identity.updatableFieldGroups contains 'IntroducerDetails'"}],"subType":"introducer","exceptionPhotoRequired":false}],"layoutTemplate":null,"preRegFetchRequired":false,"additionalInfoRequestIdRequired":false,"active":false}],"caption":{"fra":"Mettre à jour l'UIN"},"icon":"UINUpdate.png","autoSelectedGroups":["Consent","PreferredLanguage","Documents","Biometrics"],"isActive":true}
+{
+	"id": "UPDATE",
+	"order": 2,
+	"flow": "UPDATE",
+	"label": {
+		"fra": "Mise a jour  de l'INU"
+	},
+	"screens": [
+		{
+			"order": 1,
+			"name": "DemographicDetails",
+			"label": {
+				"fra": "DÃ©tails dÃ©mographiques"
+			},
+			"caption": {
+				"fra": "DÃ©tails dÃ©mographiques"
+			},
+			"fields": [
+				{
+					"id": "firstName",
+					"inputRequired": true,
+					"type": "simpleType",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "FirstName",
+					"label": {
+						"fra": "Prenom"
+					},
+					"controlType": "textbox",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [
+						{
+							"type": "regex",
+							"validator": "^(?=.{3,50}$).*",
+							"arguments": [],
+							"langCode": null,
+							"errorCode": null
+						}
+					],
+					"fieldCategory": "pvt",
+					"alignmentGroup": "DÃ©mographiques",
+					"visible": null,
+					"contactType": null,
+					"group": "firstName",
+					"groupLabel": {
+						"fra": "Prenom"
+					},
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": null,
+					"required": true,
+					"bioAttributes": null,
+					"requiredOn": [],
+					"subType": "firstName",
+					"exceptionPhotoRequired": false
+				},
+				{
+					"id": "lastName",
+					"inputRequired": true,
+					"type": "simpleType",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "LastName",
+					"label": {
+						"fra": "Nom"
+					},
+					"controlType": "textbox",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [
+						{
+							"type": "regex",
+							"validator": "^(?=.{3,50}$).*",
+							"arguments": [],
+							"langCode": null,
+							"errorCode": null
+						}
+					],
+					"fieldCategory": "pvt",
+					"alignmentGroup": "DÃ©mographiques",
+					"visible": null,
+					"contactType": null,
+					"group": "LastName",
+					"groupLabel": {
+						"fra": "Nom"
+					},
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": null,
+					"required": true,
+					"bioAttributes": null,
+					"requiredOn": [],
+					"subType": "lastName",
+					"exceptionPhotoRequired": false
+				},
+				{
+					"id": "dateOfBirth",
+					"inputRequired": true,
+					"type": "string",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "dateOfBirth",
+					"label": {
+						"fra": "Date de Naissance"
+					},
+					"controlType": "ageDate",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [
+						{
+							"type": "regex",
+							"validator": "^(1869|18[7-9][0-9]|19[0-9][0-9]|20[0-9][0-9])/([0][1-9]|1[0-2])/([0][1-9]|[1-2][0-9]|3[01])$",
+							"arguments": [],
+							"langCode": null,
+							"errorCode": null
+						}
+					],
+					"fieldCategory": "pvt",
+					"alignmentGroup": "DÃ©mographiques",
+					"visible": null,
+					"contactType": null,
+					"group": "DateOfBirth",
+					"groupLabel": {
+						"fra": "Date de Naissance"
+					},
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": null,
+					"required": true,
+					"bioAttributes": null,
+					"requiredOn": [],
+					"subType": "dateOfBirth",
+					"exceptionPhotoRequired": false
+				},
+				{
+					"id": "gender",
+					"inputRequired": true,
+					"type": "simpleType",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "gender",
+					"label": {
+						"fra": "Le genre"
+					},
+					"controlType": "dropdown",
+					"fieldType": "dynamic",
+					"format": "",
+					"validators": [],
+					"fieldCategory": "pvt",
+					"alignmentGroup": "DÃ©mographiques",
+					"visible": null,
+					"contactType": null,
+					"group": "Gender",
+					"groupLabel": {
+						"fra": "Le genre"
+					},
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": null,
+					"required": true,
+					"bioAttributes": null,
+					"requiredOn": [],
+					"subType": "gender",
+					"exceptionPhotoRequired": false
+				},
+				{
+					"id": "email",
+					"inputRequired": true,
+					"type": "string",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "email",
+					"label": {
+						"fra": "Email"
+					},
+					"controlType": "textbox",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [
+						{
+							"type": "regex",
+							"validator": "^[A-Za-z0-9_\\-]+(\\.[A-Za-z0-9_]+)*@[A-Za-z0-9_-]+(\\.[A-Za-z0-9_]+)*(\\.[a-zA-Z]{2,})$",
+							"arguments": [],
+							"langCode": null,
+							"errorCode": null
+						}
+					],
+					"fieldCategory": "pvt",
+					"alignmentGroup": "Demographiques",
+					"visible": null,
+					"contactType": "email",
+					"group": "Email",
+					"groupLabel": null,
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": null,
+					"required": false,
+					"bioAttributes": null,
+					"requiredOn": [],
+					"subType": "Email",
+					"exceptionPhotoRequired": false
+				}
+				
+				 ,
+				{
+					"id": "region",
+					"inputRequired": true,
+					"type": "simpleType",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "region",
+					"label": {
+						"fra": "RÃ©gion"
+					},
+					"controlType": "dropdown",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [
+						{
+							"type": "regex",
+							"validator": "^(?=.{0,50}$).*",
+							"arguments": [],
+							"langCode": null,
+							"errorCode": null
+						}
+					],
+					"fieldCategory": "pvt",
+					"alignmentGroup": "Adresse",
+					"visible": null,
+					"contactType": "Postal",
+					"group": "Adresse",
+					"groupLabel": null,
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": null,
+					"required": true,
+					"bioAttributes": null,
+					"requiredOn": [],
+					"subType": "REGION",
+					"exceptionPhotoRequired": false
+				},
+				{
+					"id": "prefecture",
+					"inputRequired": true,
+					"type": "simpleType",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "prefecture",
+					"label": {
+						"fra": "PrÃ©fecture"
+					},
+					"controlType": "dropdown",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [
+						{
+							"type": "regex",
+							"validator": "^(?=.{0,50}$).*",
+							"arguments": [],
+							"langCode": null,
+							"errorCode": null
+						}
+					],
+					"fieldCategory": "pvt",
+					"alignmentGroup": "Adresse",
+					"visible": null,
+					"contactType": "Postal",
+					"group": "Adresse",
+					"groupLabel": null,
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": null,
+					"required": true,
+					"bioAttributes": null,
+					"requiredOn": [],
+					"subType": "PREFECTURE",
+					"exceptionPhotoRequired": false
+				},
+				{
+					"id": "subPrefectureOrCommune",
+					"inputRequired": true,
+					"type": "simpleType",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "subPrefectureOrCommune",
+					"label": {
+						"fra": "Sous-PrÃ©fecture/Commune"
+					},
+					"controlType": "dropdown",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [
+						{
+							"type": "regex",
+							"validator": "^(?=.{0,50}$).*",
+							"arguments": [],
+							"langCode": null,
+							"errorCode": null
+						}
+					],
+					"fieldCategory": "pvt",
+					"alignmentGroup": "Adresse",
+					"visible": null,
+					"contactType": "Postal",
+					"group": "Adresse",
+					"groupLabel": null,
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": null,
+					"required": true,
+					"bioAttributes": null,
+					"requiredOn": [],
+					"subType": "SOUS_PREFECTURE_OU_COMMUNE",
+					"exceptionPhotoRequired": false
+				},
+				{
+					"id": "district",
+					"inputRequired": true,
+					"type": "simpleType",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "district",
+					"label": {
+						"fra": "District"
+					},
+					"controlType": "dropdown",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [
+						{
+							"type": "regex",
+							"validator": "^(?=.{3,50}$).*",
+							"arguments": [],
+							"langCode": null,
+							"errorCode": null
+						}
+					],
+					"fieldCategory": "pvt",
+					"alignmentGroup": "Adresse",
+					"visible": null,
+					"contactType": null,
+					"group": "Adresse",
+					"groupLabel": null,
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": null,
+					"required": true,
+					"bioAttributes": null,
+					"requiredOn": [],
+					"subType": "DISTRICT",
+					"exceptionPhotoRequired": false
+				},
+				{
+					"id": "sector",
+					"inputRequired": true,
+					"type": "simpleType",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "sector",
+					"label": {
+						"fra": "Secteur"
+					},
+					"controlType": "dropdown",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [
+						{
+							"type": "regex",
+							"validator": "^(?=.{3,50}$).*",
+							"arguments": [],
+							"langCode": null,
+							"errorCode": null
+						}
+					],
+					"fieldCategory": "pvt",
+					"alignmentGroup": "Adresse",
+					"visible": null,
+					"contactType": "Postal",
+					"group": "Adresse",
+					"groupLabel": null,
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": null,
+					"required": true,
+					"bioAttributes": null,
+					"requiredOn": [],
+					"subType": "SECTEUR",
+					"exceptionPhotoRequired": false
+				},
+				
+				{
+					"id": "additionalAddresDetails",
+					"inputRequired": true,
+					"type": "simpleType",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "additionalAddresDetails",
+					"label": {
+						"fra": "ComplÃ©ment d'adresse"
+					},
+					"controlType": "textbox",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [
+						{
+							"type": "regex",
+							"validator": "^(?=.{3,50}$).*",
+							"arguments": [],
+							"langCode": null,
+							"errorCode": null
+						}
+					],
+					"fieldCategory": "pvt",
+					"alignmentGroup": "Adresse",
+					"visible": null,
+					"contactType": "Postal",
+					"group": "Adresse",
+					"groupLabel": null,
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": null,
+					"required": false,
+					"bioAttributes": null,
+					"requiredOn": [],
+					"subType": "additionalAddresDetails",
+					"exceptionPhotoRequired": false
+				},
+				
+				
+				{
+					"id": "phone",
+					"inputRequired": true,
+					"type": "string",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "phone",
+					"label": {
+						"fra": "Phone"
+					},
+					"controlType": "textbox",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [
+						{
+							"type": "regex",
+							"validator": "^(6[1256]{1})([0-9]{7})$",
+							"arguments": [],
+							"langCode": null,
+							"errorCode": null
+						}
+					],
+					"fieldCategory": "pvt",
+					"alignmentGroup": "Demographiques",
+					"visible": null,
+					"contactType": "Phone",
+					"group": "Phone",
+					"groupLabel": null,
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": null,
+					"required": false,
+					"bioAttributes": null,
+					"requiredOn": [],
+					"subType": "Phone",
+					"exceptionPhotoRequired": false
+				},
+								 
+				
+				
+		 
+				{
+					"id": "introducerFirstName",
+					"inputRequired": true,
+					"type": "simpleType",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "introducerFirstName",
+					"label": {
+						"fra": "PrÃ©nom du tuteur"
+					},
+					"controlType": "textbox",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [],
+					"fieldCategory": "evidence",
+					"alignmentGroup": "Introducteur",
+					"visible": null,
+					"contactType": null,
+					"group": "IntroducerDetails",
+					"groupLabel": {
+						"fra": "DÃ©tails de l'introducteur"
+					},
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": null,
+					"required": true,
+					"bioAttributes": null,
+					"requiredOn": [],
+					"subType": "introducerFirstName",
+					"exceptionPhotoRequired": false
+				},
+				{
+					"id": "introducerLastName",
+					"inputRequired": true,
+					"type": "simpleType",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "introducerLastName",
+					"label": {
+						"fra": "Nom du tuteur"
+					},
+					"controlType": "textbox",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [],
+					"fieldCategory": "evidence",
+					"alignmentGroup": "Introducteur",
+					"visible": null,
+					"contactType": null,
+					"group": "IntroducerDetails",
+					"groupLabel": {
+						"fra": "DÃ©tails du tuteur"
+					},
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": null,
+					"required": true,
+					"bioAttributes": null,
+					"requiredOn": [],
+					"subType": "introducerLastName",
+					"exceptionPhotoRequired": false
+				},
+				{
+					"id": "introducerRID",
+					"inputRequired": true,
+					"type": "string",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "introducerRID",
+					"label": {
+						"fra": "NDI du tuteur"
+					},
+					"controlType": "textbox",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [
+						{
+							"type": "regex",
+							"validator": "^([0-9]{10,30})$",
+							"arguments": [],
+							"langCode": null,
+							"errorCode": null
+						}
+					],
+					"fieldCategory": "evidence",
+					"alignmentGroup": "introducer",
+					"visible": {
+						"engine": "MVEL",
+						"expr": "identity.get('introducerUIN') == nil || identity.get('introducerUIN') == empty"
+					},
+					"contactType": null,
+					"group": "IntroducerDetails",
+					"groupLabel": {
+						"fra": "DÃ©tails du tuteur"
+					},
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": null,
+					"required": false,
+					"bioAttributes": null,
+					"requiredOn": [
+						{
+							"engine": "MVEL",
+							"expr": "identity.get('introducerUIN') == nil || identity.get('introducerUIN') == empty"
+						}
+					],
+					"subType": "RID",
+					"exceptionPhotoRequired": false
+				},
+				{
+					"id": "introducerUIN",
+					"inputRequired": true,
+					"type": "string",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "introducerUIN",
+					"label": {
+						"fra": "INU du tuteur"
+					},
+					"controlType": "textbox",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [
+						{
+							"type": "regex",
+							"validator": "^([0-9]{10,30})$",
+							"arguments": [],
+							"langCode": null,
+							"errorCode": null
+						}
+					],
+					"fieldCategory": "evidence",
+					"alignmentGroup": "introducer",
+					"visible": {
+						"engine": "MVEL",
+						"expr": "identity.get('introducerRID') == nil || identity.get('introducerRID') == empty"
+					},
+					"contactType": null,
+					"group": "IntroducerDetails",
+					"groupLabel": {
+						"fra": "DÃ©tails du tuteur"
+					},
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": null,
+					"required": false,
+					"bioAttributes": null,
+					"requiredOn": [
+						{
+							"engine": "MVEL",
+							"expr": "identity.get('introducerRID') == nil || identity.get('introducerRID') == empty"
+						}
+					],
+					"subType": "UIN",
+					"exceptionPhotoRequired": false
+				}
+			],
+			"layoutTemplate": null,
+			"preRegFetchRequired": true,
+			"additionalInfoRequestIdRequired": false,
+			"active": false
+		},
+		{
+			"order": 2,
+			"name": "Documents",
+			"label": {
+				"fra": "Des documents"
+			},
+			"caption": {
+				"fra": "Des documents"
+			},
+			"fields": [
+				{
+					"id": "proofOfConsent",
+					"inputRequired": true,
+					"type": "documentType",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "proofOfConsent",
+					"label": {
+						"fra": "Preuve de consentement"
+					},
+					"controlType": "fileupload",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [],
+					"fieldCategory": "pvt",
+					"alignmentGroup": null,
+					"visible": null,
+					"contactType": null,
+					"group": "Documents",
+					"groupLabel": {
+						"fra": "Documents"
+					},
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": null,
+					"required": true,
+					"bioAttributes": null,
+					"requiredOn": [],
+					"subType": "POC",
+					"exceptionPhotoRequired": false
+				},
+				{
+					"id": "proofOfAddress",
+					"inputRequired": true,
+					"type": "documentType",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "proofOfAddress",
+					"label": {
+						"fra": "Preuve d'adresse"
+					},
+					"controlType": "fileupload",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [],
+					"fieldCategory": "pvt",
+					"alignmentGroup": null,
+					"visible": null,
+					"contactType": null,
+					"group": "Documents",
+					"groupLabel": {
+						"fra": "Documents"
+					},
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": null,
+					"required": false,
+					"bioAttributes": null,
+					"requiredOn": [
+						{
+							"engine": "MVEL",
+							"expr": "identity.updatableFieldGroups contains 'Address' || identity.updatableFieldGroups contains ''"
+						}
+					],
+					"subType": "POA",
+					"exceptionPhotoRequired": false
+				},
+				{
+					"id": "proofOfIdentity",
+					"inputRequired": true,
+					"type": "documentType",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "proofOfIdentity",
+					"label": {
+						"fra": "Preuve d'identitÃ©"
+					},
+					"controlType": "fileupload",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [],
+					"fieldCategory": "pvt",
+					"alignmentGroup": null,
+					"visible": null,
+					"contactType": null,
+					"group": "Documents",
+					"groupLabel": {
+						"fra": "Documents"
+					},
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": null,
+					"required": false,
+					"bioAttributes": null,
+					"requiredOn": [
+						{
+							"engine": "MVEL",
+							"expr": "identity.updatableFieldGroups contains 'FirstName' || identity.updatableFieldGroups contains 'LastName' || identity.updatableFieldGroups contains 'DateOfBirth'"
+						}
+					],
+					"subType": "POI",
+					"exceptionPhotoRequired": false
+				},
+				{
+					"id": "proofOfRelationship",
+					"inputRequired": true,
+					"type": "documentType",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "proofOfRelationship",
+					"label": {
+						"fra": "Preuve de relation"
+					},
+					"controlType": "fileupload",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [],
+					"fieldCategory": "pvt",
+					"alignmentGroup": null,
+					"visible": null,
+					"contactType": null,
+					"group": "Documents",
+					"groupLabel": {
+						"fra": "Documents"
+					},
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": null,
+					"required": false,
+					"bioAttributes": null,
+					"requiredOn": [
+						{
+							"engine": "MVEL",
+							"expr": "identity.get('ageGroup') == 'INFANT' || identity.get('ageGroup') == 'MINOR' || identity.updatableFieldGroups contains 'IntroducerDetails'"
+						}
+					],
+					"subType": "POR",
+					"exceptionPhotoRequired": false
+				},
+				{
+					"id": "proofOfDateOfBirth",
+					"inputRequired": true,
+					"type": "documentType",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "proofOfDateOfBirth",
+					"label": {
+						"fra": "Preuve de date de naissance"
+					},
+					"controlType": "fileupload",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [],
+					"fieldCategory": "pvt",
+					"alignmentGroup": null,
+					"visible": null,
+					"contactType": null,
+					"group": "Documents",
+					"groupLabel": {
+						"fra": "Documents"
+					},
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": null,
+					"required": false,
+					"bioAttributes": null,
+					"requiredOn": [
+						{
+							"engine": "MVEL",
+							"expr": "identity.updatableFieldGroups contains 'DateOfBirth'"
+						}
+					],
+					"subType": "POB",
+					"exceptionPhotoRequired": false
+				},
+				{
+					"id": "proofOfException",
+					"inputRequired": true,
+					"type": "documentType",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "proofOfException",
+					"label": {
+						"fra": "Preuve d'exception"
+					},
+					"controlType": "fileupload",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [],
+					"fieldCategory": "evidence",
+					"alignmentGroup": null,
+					"visible": null,
+					"contactType": null,
+					"group": "Documents",
+					"groupLabel": {
+						"fra": "Documents"
+					},
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": null,
+					"required": false,
+					"bioAttributes": null,
+					"requiredOn": [],
+					"subType": "POE",
+					"exceptionPhotoRequired": false
+				}
+			],
+			"layoutTemplate": null,
+			"preRegFetchRequired": false,
+			"additionalInfoRequestIdRequired": false,
+			"active": false
+		},
+		{
+			"order": 3,
+			"name": "BiometricDetails",
+			"label": {
+				"fra": "DÃ©tails biomÃ©triques"
+			},
+			"caption": {
+				"fra": "DÃ©tails biomÃ©triques"
+			},
+			"fields": [
+				{
+					"id": "individualBiometrics",
+					"inputRequired": true,
+					"type": "biometricsType",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "",
+					"label": {
+						"fra": "BiomÃ©trie du candidat"
+					},
+					"controlType": "biometrics",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [],
+					"fieldCategory": "pvt",
+					"alignmentGroup": null,
+					"visible": null,
+					"contactType": null,
+					"group": "Biometrics",
+					"groupLabel": {
+						"fra": "BiomÃ©trie"
+					},
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": [
+						{
+							"ageGroup": "INFANT",
+							"process": "ALL",
+							"validationExpr": "face",
+							"bioAttributes": [
+								"face"
+							]
+						}
+					],
+					"required": true,
+					"bioAttributes": [
+						"leftEye",
+						"rightEye",
+						"rightIndex",
+						"rightLittle",
+						"rightRing",
+						"rightMiddle",
+						"leftIndex",
+						"leftLittle",
+						"leftRing",
+						"leftMiddle",
+						"leftThumb",
+						"rightThumb",
+						"face"
+					],
+					"requiredOn": [
+						{
+							"engine": "MVEL",
+							"expr": "identity.updatableFieldGroups contains 'Biometrics'"
+						}
+					],
+					"subType": "applicant",
+					"exceptionPhotoRequired": true
+				},
+				{
+					"id": "individualAuthBiometrics",
+					"inputRequired": true,
+					"type": "biometricsType",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "Used to hold biometrics only for authentication",
+					"label": {
+						"fra": "Authentification BiomÃ©trie"
+					},
+					"controlType": "biometrics",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [],
+					"fieldCategory": "pvt",
+					"alignmentGroup": null,
+					"visible": null,
+					"contactType": null,
+					"group": "Biometrics",
+					"groupLabel": {
+						"fra": "BiomÃ©trie"
+					},
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": [
+						{
+							"ageGroup": "ALL",
+							"process": "ALL",
+							"validationExpr": "leftEye || rightEye || rightIndex || rightLittle || rightRing || rightMiddle || leftIndex || leftLittle || leftRing || leftMiddle || leftThumb || rightThumb || face",
+							"bioAttributes": [
+								"leftEye",
+								"rightEye",
+								"rightIndex",
+								"rightLittle",
+								"rightRing",
+								"rightMiddle",
+								"leftIndex",
+								"leftLittle",
+								"leftRing",
+								"leftMiddle",
+								"leftThumb",
+								"rightThumb",
+								"face"
+							]
+						}
+					],
+					"required": false,
+					"bioAttributes": [
+						"leftEye",
+						"rightEye",
+						"rightIndex",
+						"rightLittle",
+						"rightRing",
+						"rightMiddle",
+						"leftIndex",
+						"leftLittle",
+						"leftRing",
+						"leftMiddle",
+						"leftThumb",
+						"rightThumb",
+						"face"
+					],
+					"requiredOn": [
+						{
+							"engine": "MVEL",
+							"expr": "!(identity.get('ageGroup') == 'INFANT') && !(identity.updatableFieldGroups contains 'Biometrics')"
+						}
+					],
+					"subType": "applicant-auth",
+					"exceptionPhotoRequired": false
+				},
+				{
+					"id": "introducerBiometrics",
+					"inputRequired": true,
+					"type": "biometricsType",
+					"minimum": 0,
+					"maximum": 0,
+					"description": "",
+					"label": {
+						"fra": "Introducteur BiomÃ©trie"
+					},
+					"controlType": "biometrics",
+					"fieldType": "default",
+					"format": "none",
+					"validators": [],
+					"fieldCategory": "pvt",
+					"alignmentGroup": null,
+					"visible": null,
+					"contactType": null,
+					"group": "Biometrics",
+					"groupLabel": {
+						"fra": "BiomÃ©trie"
+					},
+					"changeAction": null,
+					"transliterate": false,
+					"templateName": null,
+					"fieldLayout": null,
+					"Hierarchy": null,
+					"conditionalBioAttributes": [
+						{
+							"ageGroup": "ALL",
+							"process": "ALL",
+							"validationExpr": "leftEye || rightEye || rightIndex || rightLittle || rightRing || rightMiddle || leftIndex || leftLittle || leftRing || leftMiddle || leftThumb || rightThumb || face",
+							"bioAttributes": [
+								"leftEye",
+								"rightEye",
+								"rightIndex",
+								"rightLittle",
+								"rightRing",
+								"rightMiddle",
+								"leftIndex",
+								"leftLittle",
+								"leftRing",
+								"leftMiddle",
+								"leftThumb",
+								"rightThumb",
+								"face"
+							]
+						}
+					],
+					"required": false,
+					"bioAttributes": [
+						"leftEye",
+						"rightEye",
+						"rightIndex",
+						"rightLittle",
+						"rightRing",
+						"rightMiddle",
+						"leftIndex",
+						"leftLittle",
+						"leftRing",
+						"leftMiddle",
+						"leftThumb",
+						"rightThumb",
+						"face"
+					],
+					"requiredOn": [
+						{
+							"engine": "MVEL",
+							"expr": "identity.get('ageGroup') == 'INFANT' || identity.get('ageGroup') == 'MINOR' || identity.updatableFieldGroups contains 'IntroducerDetails'"
+						}
+					],
+					"subType": "introducer",
+					"exceptionPhotoRequired": false
+				}
+			],
+			"layoutTemplate": null,
+			"preRegFetchRequired": false,
+			"additionalInfoRequestIdRequired": false,
+			"active": false
+		}
+	],
+	"caption": {
+		"fra": "Mettre Ã jour l'INU"
+	},
+	"icon": "UINUpdate.png",
+	"autoSelectedGroups": [
+		"Consent",
+		"PreferredLanguage",
+		"Documents",
+		"Biometrics"
+	],
+	"isActive": true
+}
